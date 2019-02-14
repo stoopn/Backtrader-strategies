@@ -1,0 +1,6 @@
+f = open("SMIMTR.csv", "rb")
+s = f.readlines()
+f.close()
+f = open("SMIMTRord.csv", "wb")
+f.writelines(s[::-1])
+f.close()
